@@ -1,0 +1,10 @@
+function depositProfit(deposit, rate, threshold) {
+    var profit = deposit;
+    var counter = 0;
+    //loop adds the interest accrued per year
+    while(profit<threshold){
+        profit = ((profit*(100+rate))/100);
+        counter++;
+    }
+    return counter;
+}
